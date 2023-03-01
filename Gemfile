@@ -15,9 +15,10 @@ gem "rack-contrib", "~> 2.3"
 
 gem "sinatra", "~> 3.0", ">= 3.0.5"
 
-gem 'faker', '~> 3.1', '>= 3.1.1'
 
 group :development do
   gem "pry", "~> 0.14.2"
   gem "rerun", "~> 0.14.0"
 end
+
+gem 'faker', '~> 3.1', '>= 3.1.1'
