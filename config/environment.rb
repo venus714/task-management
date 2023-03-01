@@ -1,4 +1,6 @@
-require "bundler/setup"
-Bundler.require
+ENV["RACK_ENV"] ||= "development"
 
-require_all 'app'
+require "bundler/setup"
+Bundler.require(:default, ENV["RACK_ENV"])
+
+require_all "app"
