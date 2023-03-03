@@ -15,14 +15,18 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_01_094919) do
     t.string "name"
     t.string "description"
     t.datetime "due"
-    t.string "status"
     t.integer "user_id"
+    t.datetime "createdAt", null: false
+    t.integer "status", default: 0, null: false
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.string "password"
+    t.string "full_name", null: false
+    t.string "email", null: false
+    t.string "password_hash", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "uk_email", unique: true
   end
 
 end

@@ -1,24 +1,28 @@
-source "http://rubygems.org"
+# frozen_string_literal: true
 
+source "https://rubygems.org"
 
-gem "sqlite3", "~> 1.6", ">= 1.6.1"
+#ruby '2.7.4' #File.read('.ruby-version').strip
 
-gem "rake", "~> 13.0", ">= 13.0.6"
+# gem "rails"
+gem 'sinatra', '~> 3.0', '>= 3.0.5'
 
-gem "activerecord", "~> 7.0", ">= 7.0.4.2"
+gem 'sinatra-cross_origin', '~> 0.4.0'
 
-gem "sinatra-activerecord", "~> 2.0", ">= 2.0.26"
+gem 'activerecord', '~> 7.0', '>= 7.0.4.2'
 
-gem "require_all", "~> 3.0"
+gem 'rake', '~> 13.0', '>= 13.0.6'
 
-gem "rack-contrib", "~> 2.3"
+gem 'sqlite3', '~> 1.6', '>= 1.6.1'
 
-gem "sinatra", "~> 3.0", ">= 3.0.5"
+gem 'bcrypt', '~> 3.1', '>= 3.1.18'
 
+gem 'sinatra-activerecord', '~> 2.0', '>= 2.0.26'
+
+gem 'puma', '~> 6.1'
+
+gem 'require_all', '~> 3.0'
 
 group :development do
-  gem "pry", "~> 0.14.2"
-  gem "rerun", "~> 0.14.0"
+    gem 'rerun', '~> 0.14.0'
 end
-
-gem 'faker', '~> 3.1', '>= 3.1.1'
