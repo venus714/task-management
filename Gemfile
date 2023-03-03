@@ -7,7 +7,7 @@ source "https://rubygems.org"
 # gem "rails"
 gem 'sinatra', '~> 3.0', '>= 3.0.5'
 
-ruby '2.7.4'
+ruby '2.7.2'
 
 gem 'sinatra-cross_origin', '~> 0.4.0'
 
