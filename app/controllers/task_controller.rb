@@ -45,7 +45,7 @@ class TaskController < AppController
 
     delete '/tasks/destroy/:id' do
         begin
-            task = Task.find(self.todo_id)
+            task = Task.find(self.task_id)
             task.destroy
             json_response(data: { message: "task deleted successfully" })
         rescue => e
